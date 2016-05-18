@@ -1,0 +1,45 @@
+{
+    "name": "professionalweb/helpers",
+    "version": "1.0",
+    "description": "Helpers for web-development",
+    "homepage": "http://web-development.pw/",
+    "keywords": [
+        "pwf",
+        "professional web",
+        "web-development.pw",
+        "mvc",
+        "composer",
+        "helpers"
+    ],
+    "minimum-stability": "stable",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zinchenko Sergey",
+            "email": "zinchenko@web-development.pw"
+        }
+    ],
+    "support": {
+        "email": "info@web-development.pw",
+        "issues": "https://github.com/SergioMadness/pwf/issues",
+        "wiki": "https://github.com/SergioMadness/pwf/wiki",
+        "source": "https://github.com/SergioMadness/pwf/releases"
+    },
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "codeception/codeception": "*",
+        "satooshi/php-coveralls": "*",
+        "codeclimate/php-test-reporter": "*"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "autoload": {
+        "psr-4": {
+            "pwf\\helpers\\": "src/"
+        }
+    }
+}
