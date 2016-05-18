@@ -3,6 +3,15 @@ Helpers
 
 [http://web-development.pw/](http://web-development.pw/)
 
+[![Latest Stable Version](https://poser.pugx.org/professionalweb/helpers/v/stable)](https://packagist.org/packages/professionalweb/helpers)
+[![Build Status](https://travis-ci.org/SergioMadness/pwf-helpers.svg?branch=dev)](https://travis-ci.org/SergioMadness/pwf-helpers)
+[![Code Climate](https://codeclimate.com/github/SergioMadness/pwf-helpers/badges/gpa.svg)](https://codeclimate.com/github/SergioMadness/pwf-helpers)
+[![Coverage Status](https://coveralls.io/repos/github/SergioMadness/pwf-helpers/badge.svg?branch=dev)](https://coveralls.io/github/SergioMadness/pwf-helpers?branch=dev)
+[![Dependency Status](https://www.versioneye.com/user/projects/573c4f34ce8d0e004505e8d4/badge.svg?style=flat)](https://www.versioneye.com/user/projects/573c4f34ce8d0e004505e8d4)
+[![License](https://poser.pugx.org/professionalweb/helpers/license)](https://packagist.org/packages/professionalweb/helpers)
+[![Latest Unstable Version](https://poser.pugx.org/professionalweb/helpers/v/unstable)](https://packagist.org/packages/professionalweb/helpers)
+
+
 Requirements
 ------------
  - PHP 5.4+
