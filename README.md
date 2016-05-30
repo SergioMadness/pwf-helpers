@@ -19,7 +19,7 @@ Requirements
 
 Installation
 ------------
-PWF is available through [composer](https://getcomposer.org/)
+Module is available through [composer](https://getcomposer.org/)
 
 composer require professionalweb/helpers "dev-master"
 
