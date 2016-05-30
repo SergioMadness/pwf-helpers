@@ -1,6 +1,6 @@
 {
     "name": "professionalweb/helpers",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Helpers for web-development",
     "homepage": "http://web-development.pw/",
     "keywords": [
@@ -9,7 +9,8 @@
         "web-development.pw",
         "mvc",
         "composer",
-        "helpers"
+        "helpers",
+        "validator"
     ],
     "minimum-stability": "stable",
     "type": "library",

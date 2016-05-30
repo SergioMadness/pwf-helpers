@@ -68,11 +68,11 @@ class Validator
         if (!isset($data[$paramName])) {
             throw new \Exception('Parameter is not set');
         }
-        if (!isset($paramName['equalTo'])) {
+        if (!isset($params['equalTo'])) {
             throw new \Exception('Parameter \'equalTo\' is required');
         }
 
-        if ($data[$paramName] !== $data[$paramName['equalTo']]) {
+        if ($data[$paramName] !== $data[$params['equalTo']]) {
             $result = false;
         }
 
@@ -120,7 +120,7 @@ class Validator
     {
         $result = false;
         if (isset($data[$paramName])) {
-            $result = filter_var($data[$paramName], FILTER_VALIDATE_EMAIL);
+            $result = filter_var($data[$paramName], FILTER_VALIDATE_EMAIL) !== false;
         } else {
             throw new \Exception('Parameter is not set');
         }
