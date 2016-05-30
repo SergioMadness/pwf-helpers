@@ -56,6 +56,12 @@ Classes
     - methodDI
     - constructObject
     - createObject
+ - Validator
+    - validate
+    - validateEquality
+    - validateLength
+    - validateEmail
+    - validateByCallback
 
 
 
