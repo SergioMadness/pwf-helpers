@@ -50,6 +50,7 @@ Classes
     - invokeSoap
  - StringHelpers
     - hashString
+    - translit
  - SystemHelpers
     - call
     - functionDI

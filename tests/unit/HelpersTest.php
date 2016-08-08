@@ -192,6 +192,18 @@ class HelpersTest extends \PHPUnit_Framework_TestCase
                 \pwf\helpers\ArrayHelper::recursivelyGetValue('key12', $arr));
         }
 
+        public function testTranslit()
+        {
+            $this->assertEquals('test',
+                \pwf\helpers\StringHelpers::rus2translit('тест'));
+        }
+
+        public function testUrlTranslit()
+        {
+            $this->assertEquals('test-test',
+                \pwf\helpers\StringHelpers::str2url('тест-тест'));
+        }
+
         public function testXml2Array()
         {
             $xml    = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<root><key1>value1</key1><key2>value2</key2></root>\n";
