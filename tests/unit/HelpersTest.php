@@ -216,4 +216,17 @@ class HelpersTest extends \PHPUnit_Framework_TestCase
             $this->assertEquals($xml,
                 \pwf\helpers\ConvertHelper::array2XML($result, 'root')->saveXML());
         }
+
+        public function testStringMinifier()
+        {
+            $testString = "<html>
+                <test>test</test>
+                <!-- comment -->
+                </html>";
+            $result     = '<html> <test>test</test> </html>';
+
+
+            $this->assertEquals($result,
+                \pwf\helpers\StringHelpers::minify($testString));
+        }
     }

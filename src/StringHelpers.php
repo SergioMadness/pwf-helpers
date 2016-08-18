@@ -94,4 +94,16 @@ class StringHelpers
         $str = trim($str, "-");
         return $str;
     }
+
+    /**
+     * Minify string
+     *
+     * @param string $str
+     * @return string
+     */
+    public static function minify($str)
+    {
+        return preg_replace(['/<!--(.*)-->/Uis', "/[[:blank:]]+/"], ['', ' '],
+            str_replace(["\n", "\r", "\t"], '', $str));
+    }
 }
