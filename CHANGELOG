@@ -7,3 +7,9 @@ PWF - helpers
  - HttpHelper
  - StringHelper
  - SystemHelper
+
+## v1.1 30.05.2016
+ - Validator
+
+## v1.1.1 08.08.2016
+ - Transliteration

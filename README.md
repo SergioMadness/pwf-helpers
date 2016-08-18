@@ -50,12 +50,19 @@ Classes
     - invokeSoap
  - StringHelpers
     - hashString
+    - translit
  - SystemHelpers
     - call
     - functionDI
     - methodDI
     - constructObject
     - createObject
+ - Validator
+    - validate
+    - validateEquality
+    - validateLength
+    - validateEmail
+    - validateByCallback
 
 
 
