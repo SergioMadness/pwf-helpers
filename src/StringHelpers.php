@@ -103,7 +103,16 @@ class StringHelpers
      */
     public static function minify($str)
     {
-        return preg_replace(['/<!--(.*)-->/Uis', "/[[:blank:]]+/"], ['', ' '],
+        $matches = [];
+        preg_match_all('/<code>(.*?)<\/code>/mis', $str, $matches);
+        foreach ($matches[1] as $match) {
+            $str = str_replace($match, '$'.md5($match), $str);
+        }
+        $str = preg_replace(['/<!--(.*)-->/Uis', "/[[:blank:]]+/"], ['', ' '],
             str_replace(["\n", "\r", "\t"], '', $str));
+        foreach ($matches[1] as $match) {
+            $str = str_replace('$'.md5($match), $match, $str);
+        }
+        return $str;
     }
 }
