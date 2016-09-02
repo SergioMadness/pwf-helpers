@@ -103,14 +103,17 @@ class StringHelpers
      */
     public static function minify($str)
     {
-        $matches = [];
-        preg_match_all('/<code>(.*?)<\/code>/mis', $str, $matches);
-        foreach ($matches[1] as $match) {
+        $matchesCode = $matchesPre  = $matches     = [];
+
+        preg_match_all('/<code.*?>(.*?)<\/code>/mis', $str, $matchesCode);
+        preg_match_all('/<pre.*?>(.*?)<\/pre>/mis', $str, $matchesPre);
+        $matches = array_merge($matchesCode[1], $matchesPre[1]);
+        foreach ($matches as $match) {
             $str = str_replace($match, '$'.md5($match), $str);
         }
         $str = preg_replace(['/<!--(.*)-->/Uis', "/[[:blank:]]+/"], ['', ' '],
             str_replace(["\n", "\r", "\t"], '', $str));
-        foreach ($matches[1] as $match) {
+        foreach ($matches as $match) {
             $str = str_replace('$'.md5($match), $match, $str);
         }
         return $str;
