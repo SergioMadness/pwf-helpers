@@ -13,3 +13,6 @@ PWF - helpers
 
 ## v1.1.1 08.08.2016
  - Transliteration
+
+## v1.1.3 11.11.2016
+ - Remove getType
