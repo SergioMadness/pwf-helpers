@@ -38,8 +38,7 @@ class SystemHelpers
         $inputParams    = [];
         if ($callback !== null) {
             foreach ($functionParams as $functionParam) {
-                $param = $callback($functionParam->name,
-                    $functionParam->getType());
+                $param = $callback($functionParam->name);
                 if (!empty($param)) {
                     $inputParams[] = $param;
                 }
@@ -68,7 +67,7 @@ class SystemHelpers
             }
         }
         foreach ($functionParams as $functionParam) {
-            $param = $callback($functionParam->name, $functionParam->getType());
+            $param = $callback($functionParam->name);
             if (!empty($param)) {
                 $inputParams[] = $param;
             }
